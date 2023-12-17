@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Work+Sans:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(275, 100%, 97%);
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  /* border: 1px solid black; */
+  border-radius: 1em;
+  /* z-index: 2; */
+  padding: 1em;
+  margin: 10em 1.5em;
+}
+
+.accordion {
+  border: none;
+  font-weight: 700;
+}
+
+.panel {
+  display: none;
+  color: gray;
+  font-size: 0.75em;
+  line-height: 1.5em;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container p {
+  font-weight: bold;
+  width: 80%;
+}
+
+.faq {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 2.5em;
+  margin: 0 0 0 0.25em;
+}
+
+.faq img {
+  width: 0.75em;
+  height: 0.75em;
+  margin-right: 0.5em;
+}
+
+.faq p {
+  font-weight: 700;
+}
+
+hr {
+  border: 0.5px solid lightgrey;
+  width: 100%;
+}
+
+@media (min-width: 376px) {
+  body {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+  }
+  .container {
+    max-width: 60%;
+  }
+}
